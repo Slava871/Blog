@@ -13,7 +13,7 @@
     <div th:each="el : ${post}">
         <form  method="post">
                 <input type="text" th:value="${el.title}" name="title" placeholder="введите название статьи" class="form-control"/><br>
-                <input type="text" th:value="${el.anons}" name="anons" placeholder="введите анонс статьи" class="form-control"></input><br>
+                <input type="text" th:value="${el.anons}" name="anons" placeholder="введите анонс следующей статьи" class="form-control"></input><br>
                 <textarea  name="full_text" th:value="${el.full_text}"
                            placeholder="введите полный текст статьи" class="form-control" th:text="${el.full_text}" /><br>
                 <button type="submit" class="btn btn-success">Обновить</button>
