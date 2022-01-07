@@ -105,5 +105,5 @@ public class BlogController {
         postRepository.delete(post);
         return "redirect:/blog";
     }
-    // ПРОВЕРОЧНОЕ ДОБАВЛЕНИЕ
+    // ПРОВ
 }
